@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700;800&display=swap");
+
+/* App font */
+body,
+button,
+input,
+textarea,
+select,
+option,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+p,
+span,
+label,
+small,
+strong,
+b,
+a,
+li {
+  font-family: "Smooch Sans", Arial, sans-serif;
+}
+
+/* Headings use app font, except logo/brand below */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Smooch Sans", Arial, sans-serif;
+}
+
+/* Keep DOT&KEY logo original */
+.logo,
+.logo *,
+.brand,
+.brand *,
+.navbar-logo,
+.navbar-logo *,
+.nav-logo,
+.nav-logo *,
+.site-logo,
+.site-logo *,
+.header-logo,
+.header-logo *,
+.logo-text,
+.logo-text * {
+  font-family: "Playfair Display", serif !important;
+}
+
+/* Inputs and selects need explicit font */
+input::placeholder,
+textarea::placeholder {
+  font-family: "Smooch Sans", Arial, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: "Smooch Sans", Arial, sans-serif;
+}
+
+/* React default */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-size: 18px;
+}
+
+button,
+input,
+textarea,
+select,
+option,
+table,
+th,
+td,
+p,
+span,
+label,
+small,
+strong,
+b,
+a,
+li {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+button,
+select,
+input {
+  font-size: 18px;
+}
+
+th {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+td {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+small {
+  font-size: 16px;
+}
+.product-table,
+.product-table *,
+.show-product-page,
+.show-product-page *,
+table,
+table * {
+  font-size: 18px !important;
+}
+
+table th {
+  font-size: 17px !important;
+}
+
+table td {
+  font-size: 18px !important;
+}

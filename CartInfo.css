@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap");
+.cart-page {
+  min-height: 100vh;
+  padding: 35px 20px;
+  background: linear-gradient(135deg, #ecfeff, #fff7ed);
+}
+
+.cart-header {
+  max-width: 1200px;
+  margin: 0 auto 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  animation: fadeUp 0.5s ease;
+}
+
+.cart-header p {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cart-header h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 42px;
+}
+
+.cart-header span {
+  display: block;
+  margin-top: 8px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.cart-layout {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 22px;
+  align-items: start;
+}
+
+.cart-items {
+  display: grid;
+  gap: 15px;
+}
+
+.cart-card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 90px 1fr 130px 120px 90px;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.1);
+  animation: fadeUp 0.45s ease both;
+}
+
+.cart-card:hover {
+  transform: translateY(-3px);
+}
+
+.cart-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cart-product-info p {
+  margin: 0 0 5px;
+  color: #0f766e;
+  font-weight: 900;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.cart-product-info h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 18px;
+}
+
+.cart-product-info b {
+  color: #db2777;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-quantity button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: #ccfbf1;
+  color: #0f766e;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.cart-quantity span {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.cart-total-price {
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.remove-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #991b1b;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+  color: white;
+}
+
+.cart-summary {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  animation: fadeUp 0.5s ease;
+  position: sticky;
+  top: 90px;
+}
+
+.cart-summary h2 {
+  margin: 0 0 18px;
+  color: #0f172a;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
+  font-weight: 700;
+}
+
+.summary-row b {
+  color: #0f172a;
+}
+
+.grand-total {
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.checkout-btn,
+.continue-btn,
+.cart-empty button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  background: linear-gradient(135deg, #0f766e, #db2777);
+  color: white;
+}
+
+.continue-btn {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.checkout-btn:hover,
+.continue-btn:hover,
+.cart-empty button:hover {
+  transform: translateY(-2px);
+}
+
+.checkout-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cart-empty {
+  background: white;
+  padding: 45px;
+  border-radius: 14px;
+  text-align: center;
+  color: #64748b;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+  animation: fadeUp 0.5s ease;
+}
+
+.cart-empty h2 {
+  color: #0f172a;
+}
+
+.cart-empty button {
+  max-width: 220px;
+  background: #0f766e;
+  color: white;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 950px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    position: static;
+  }
+
+  .cart-card {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .cart-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cart-quantity,
+  .cart-total-price,
+  .remove-btn {
+    grid-column: 1 / -1;
+  }
+}

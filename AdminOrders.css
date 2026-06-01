@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap");
+
+.admin-orders-page {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  padding: 40px 76px;
+  background: #f8fafc;
+}
+
+.admin-orders-page h1 {
+  max-width: 1400px;
+  margin: 0 auto 28px;
+  color: #1e293b;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.admin-orders-list {
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admin-order-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 220px;
+  gap: 24px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.admin-order-card:hover {
+  transform: translateY(-3px);
+  border-color: #0f766e;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.admin-order-card h3 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.admin-order-card p {
+  margin: 5px 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.admin-order-card b {
+  display: block;
+  margin-bottom: 8px;
+  color: #1e293b;
+  font-size: 15px;
+}
+
+.admin-order-card h3:last-child {
+  margin-top: 12px;
+  color: #0f766e;
+}
+
+.order-status {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.admin-order-card select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-order-card select:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+@media (max-width: 900px) {
+  .admin-order-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-orders-page {
+    padding: 24px 12px;
+  }
+
+  .admin-orders-page h1 {
+    font-size: 24px;
+  }
+
+  .admin-order-card {
+    padding: 18px;
+  }
+}
+.admin-orders-page {
+  font-size: 20px;
+}
+
+.admin-orders-page h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.admin-order-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.admin-order-card p {
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.admin-order-card b {
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.admin-order-card h3:last-child {
+  font-size: 24px;
+}
+
+.order-status {
+  font-size: 17px;
+  padding: 8px 14px;
+}
+
+.admin-order-card select {
+  font-size: 20px;
+  padding: 12px 14px;
+}
+
+@media (max-width: 480px) {
+  .admin-orders-page h1 {
+    font-size: 34px;
+  }
+
+  .admin-order-card h3 {
+    font-size: 22px;
+  }
+
+  .admin-order-card p,
+  .admin-order-card b,
+  .admin-order-card select {
+    font-size: 18px;
+  }
+}
